@@ -46,6 +46,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup>
+    <SourcePath>C:\Users\$(USERNAME)\Documents\Arduino\libraries\walnutsmasher_controller\</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
@@ -79,25 +82,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\App.cpp" />
-    <ClCompile Include="c:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\Command.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\datapack.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\hc-sr04.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\header.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\L298.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\pin.cpp" />
-    <ClCompile Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\Speed.cpp" />
+    <ClCompile Include="$(SourcePath)App.cpp" />
+    <ClCompile Include="$(SourcePath)Command.cpp" />
+    <ClCompile Include="$(SourcePath)datapack.cpp" />
+    <ClCompile Include="$(SourcePath)hc-sr04.cpp" />
+    <ClCompile Include="$(SourcePath)header.cpp" />
+    <ClCompile Include="$(SourcePath)L298.cpp" />
+    <ClCompile Include="$(SourcePath)pin.cpp" />
+    <ClCompile Include="$(SourcePath)Speed.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\App.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\Command.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\datapack.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\hc-sr04.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\header.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\L298.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\pin.h" />
-    <ClInclude Include="C:\Users\minyua\Documents\Arduino\libraries\walnutsmasher\Speed.h" />
+    <ClInclude Include="$(SourcePath)App.h" />
+    <ClInclude Include="$(SourcePath)Command.h" />
+    <ClInclude Include="$(SourcePath)datapack.h" />
+    <ClInclude Include="$(SourcePath)hc-sr04.h" />
+    <ClInclude Include="$(SourcePath)header.h" />
+    <ClInclude Include="$(SourcePath)L298.h" />
+    <ClInclude Include="$(SourcePath)pin.h" />
+    <ClInclude Include="$(SourcePath)Speed.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
